@@ -15,12 +15,12 @@ router.get('/', function(req,res){
         if(error){ 
             return res.status(500).json({
                 status: false,
-                message: 'database ngga nyambung',
+                message: 'database ngga nyambung TT',
             })
         }else{
             return res.status(200).json({
                 status:true,
-                message: 'Menampilkan data table posts',
+                message: 'Menampilkan data table Basket :V',
                 data:rows
             })
         }    
@@ -57,12 +57,12 @@ router.post('/',
                 if(err){
                     return res.status(500).json({
                         status: false,
-                        message: 'Server mu error',
+                        message: 'Server mu error TT',
                     })
                 }else{
                     return res.status(201).json({
                         status: true,
-                        message: 'Berhasil input data',
+                        message: 'Berhasil input data >W<',
                         data: rows[0]
                     })
                 }
@@ -79,7 +79,7 @@ router.get('/:id', function(req,res){
             if(error){
                 return res.status(500).json({
                     status:false,
-                    message:'Server Error'
+                    message:'Server ERROR!!'
                 })
             }
 
@@ -87,12 +87,12 @@ router.get('/:id', function(req,res){
             if(rows.length <= 0){
                 return res.status(404).json({
                     status: false,
-                    message: 'Data tidak ada'
+                    message: 'Data tidak ada X'
                 })
             } else {
                 return res.status(200).json({
                     status: true,
-                    message: 'menampilkan data posts',
+                    message: 'menampilkan data Basket',
                     data: rows[0],
                 })
             }
